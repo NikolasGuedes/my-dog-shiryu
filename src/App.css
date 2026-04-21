@@ -3,9 +3,5 @@ html, body, #root {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url('/imgs/background_image.png');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: black;
 }

@@ -1,0 +1,37 @@
+.background-layer {
+  position: fixed;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.background-layer-logo {
+  z-index: 1;
+  object-fit: contain;
+  object-position: center top;
+  inset: auto;
+  top: clamp(42px, 10vh, 118px);
+  left: 50%;
+  width: min(58vw, 1030px);
+  height: auto;
+  max-height: 80vh;
+}
+
+.background-layer-texture {
+  z-index: 0;
+  background-image: url('/imgs/background_image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 760px) {
+  .background-layer-logo {
+    top: clamp(48px, 12vh, 88px);
+    width: min(84vw, 520px);
+    max-height: 58vh;
+  }
+}

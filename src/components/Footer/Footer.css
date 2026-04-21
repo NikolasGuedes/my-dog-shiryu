@@ -1,0 +1,53 @@
+.site-footer {
+  position: fixed;
+  right: clamp(24px, 6.4vw, 112px);
+  bottom: clamp(18px, 3.4vw, 48px);
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(10px, 1.1vw, 18px);
+  width: min(30vw, 430px);
+  min-width: 250px;
+  pointer-events: none;
+  opacity: 0.42;
+}
+
+.footer-icons {
+  display: grid;
+  grid-template-columns: repeat(3, clamp(28px, 2.7vw, 50px));
+  gap: clamp(2px, 0.3vw, 6px);
+  flex: 0 0 auto;
+}
+
+.footer-icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer-signature {
+  display: block;
+  width: min(17vw, 234px);
+  min-width: 134px;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .site-footer {
+    right: 18px;
+    bottom: 18px;
+    width: min(58vw, 300px);
+    min-width: 0;
+    gap: 8px;
+    opacity: 0.48;
+  }
+
+  .footer-icons {
+    grid-template-columns: repeat(3, 26px);
+  }
+
+  .footer-signature {
+    width: min(36vw, 170px);
+    min-width: 112px;
+  }
+}
